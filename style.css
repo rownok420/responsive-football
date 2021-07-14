@@ -15,7 +15,6 @@ body{
     margin: auto;
 }
 
-
 .half-width{
     width: 50%;
 }
@@ -36,14 +35,12 @@ body{
     margin: auto;
 }
 
-
-/* start heder section  */
+/* start header section  */
 
 .flex-container{
     display: flex;
     padding: 50px;
 }
-
 
 .welcome{
     background-color: #2D25A0;
@@ -53,6 +50,19 @@ body{
     font-size: 64px;
     line-height: 80px;
     color: #FFFFFF;
+}
+
+.half-width h2{
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.half-width p{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    margin-right: 130px;
+    margin-top: 10px;
 }
 
 .btn{
@@ -169,6 +179,10 @@ body{
     padding: 15px;
 }
 
+.referee:hover{
+    box-shadow: 3px 5px 9px 8px rgba(0, 89, 255, 0.24);
+}
+
 .referees-banner img{
     width: 300px;
     height: 256px;
@@ -212,6 +226,10 @@ body{
     box-shadow: 2px 4px 8px 5px rgba(0, 26, 255, 0.315);
     border-radius: 5px;
     padding: 15px;
+}
+
+.prize:hover{
+    box-shadow: 3px 5px 9px 8px rgba(247, 0, 255, 0.24);
 }
 
 .prize-banner img{
@@ -381,4 +399,46 @@ body{
 
 @media only screen and ( min-width:688px) and (max-width:992px){
 
+    /* header section  */
+
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn{
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .half-width{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #banner-images{
+        width: 100%;
+    }
+
+    /* main section  */
+
+    .players-container{
+        width: 90%;
+        margin: auto;
+    }
+
+    .players{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .referees,.prizes{
+        grid-template-columns:repeat(1,1fr);
+    }
+
+    .player,.referee,.prize{
+        display: block;
+        margin: 0 auto;
+        
+    }
 }
