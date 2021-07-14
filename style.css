@@ -319,6 +319,10 @@ body{
     margin-bottom: 20px;
 }
 
+.footer-icon a{
+    color:#2D25A0;
+}
+
 .footer-icon i{
     background: #969BAB;
     padding: 5px;
